@@ -4,9 +4,10 @@ type GreetProps = {
 }
 
 export const Greet = (props: GreetProps) => {
+    const { name = 'Kauã' } = props
     return(
         <div>
-            <h2>Welcome {props.name}!</h2>
+            <h2>Welcome {name}!</h2>
             {props.list.map(letter => {
                 return(
                     <li>{letter}</li>
