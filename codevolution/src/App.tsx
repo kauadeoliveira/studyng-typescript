@@ -1,10 +1,11 @@
 import './App.css'
 import { Greet } from './components/Greet'
+import { Status } from './components/Status'
 
 function App() {
   return (
     <div className="App">
-      <Greet name='Kauã' list={['A', 'B', 'C']}/>
+      <Status status='error'/>  
     </div>
   )
 }
