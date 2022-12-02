@@ -35,3 +35,7 @@ const voidExample = (param: string): void => {
     console.log(param)
 }
 
+// unknow
+const unknowExample = (param: unknown): any => {
+    typeof param === 'function' ? param() : 'this is not function'
+}
