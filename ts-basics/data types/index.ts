@@ -24,3 +24,14 @@ enum Example {
 const unionExample = (param: string | number | boolean): string | number | boolean => {
     return param
 }
+
+// any
+const anyExample = (param: any): any => {
+    return param
+}
+
+// void
+const voidExample = (param: string): void => {
+    console.log(param)
+}
+
