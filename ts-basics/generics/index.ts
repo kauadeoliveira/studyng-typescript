@@ -9,3 +9,8 @@ const example2 = <T, U> (a: T, b: U): void => {
     console.log(a)
     console.log(b)
 }
+
+// Interface with Generic Type
+interface example3 <T> {
+    value: T
+}
