@@ -16,5 +16,10 @@ function myMap<T>(array: T[], callback: (value: T) => any): T[] {
     return myArray
 }
 
+function myForEach<T>(array: T[], callback: (value: T) => any): any {
+    for(let i: number = 0; array.length > i; i++) {
+        callback(array[i])
+    }
+}
 
-console.log(myMap(arrayTeste, (value) => value * 2))
+myForEach(arrayTeste, (value) => console.log(value))
