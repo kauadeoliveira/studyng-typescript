@@ -58,3 +58,13 @@ const hornet600: Moto = {
     rodas: 2,
     fullSpeed: 200
 }
+
+// Omit
+
+type Barco = Omit<Vehicle, "rodas" | "portas">
+
+const jetski: Barco = {
+    type: "barco",
+    model: "Jetski RXP Seadoo",
+    fullSpeed: 112
+}
