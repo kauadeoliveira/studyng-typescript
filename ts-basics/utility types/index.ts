@@ -77,3 +77,10 @@ const campeao: Exclude<FinalDaCopa,'França'> = "Brasil"
 type myUnionType = "a" | "b" | "c" | "d" | "e"
 
 const vogal: Extract<myUnionType, "a" | "e"> =  "e"
+
+// NonNullable
+type myType = string | number | boolean | null | undefined
+
+type noNullsAndUndefined = NonNullable<myType>
+
+const exampleNoNullable: noNullsAndUndefined = "no undefined and nulls types"
