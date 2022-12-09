@@ -60,7 +60,6 @@ const hornet600: Moto = {
 }
 
 // Omit
-
 type Barco = Omit<Vehicle, "rodas" | "portas">
 
 const jetski: Barco = {
@@ -68,3 +67,8 @@ const jetski: Barco = {
     model: "Jetski RXP Seadoo",
     fullSpeed: 112
 }
+
+// Exclude
+type FinalDaCopa = 'Brasil' | 'França'
+
+const campeao: Exclude<FinalDaCopa,'França'> = "Brasil"
