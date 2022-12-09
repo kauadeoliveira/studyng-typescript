@@ -72,3 +72,8 @@ const jetski: Barco = {
 type FinalDaCopa = 'Brasil' | 'França'
 
 const campeao: Exclude<FinalDaCopa,'França'> = "Brasil"
+
+// Extract
+type myUnionType = "a" | "b" | "c" | "d" | "e"
+
+const vogal: Extract<myUnionType, "a" | "e"> =  "e"
