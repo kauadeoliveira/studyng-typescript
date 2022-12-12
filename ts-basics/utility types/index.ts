@@ -84,3 +84,23 @@ type myType = string | number | boolean | null | undefined
 type noNullsAndUndefined = NonNullable<myType>
 
 const exampleNoNullable: noNullsAndUndefined = "no undefined and nulls types"
+
+// Parameters
+
+type exampleParameters = Parameters<(name: string, age: number) => void>
+
+
+// Tipos de manipulação de string
+type name = string
+
+// Uppercase
+const myName: Uppercase<name> = 'KAUÃ'
+
+// Capitalize
+const myName2: Capitalize<name> = 'Kauã'
+
+// Uncapitalize
+const myName3: Uncapitalize<name> = 'kauã'
+
+// LowerCase
+const myName4: Lowercase<name> = 'kauã'
