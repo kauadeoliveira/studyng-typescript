@@ -99,6 +99,17 @@ const exampleNoNullable: noNullsAndUndefined = "no undefined and nulls types"
 type exampleParameters = Parameters<(name: string, age: number) => void>
 
 
+// ReturnType
+const getUser = () => {
+    return {
+        name: 'kauã',
+        nickname: 'drakotheboy',
+        age: 19
+    }
+}
+type FunctionReturnType = ReturnType<typeof getUser>
+
+
 // Tipos de manipulação de string
 type name = string
 
