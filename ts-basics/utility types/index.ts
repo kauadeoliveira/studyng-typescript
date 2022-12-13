@@ -115,13 +115,10 @@ type name = string
 
 // Uppercase
 const myName: Uppercase<name> = 'KAUÃ'
-
 // Capitalize
 const myName2: Capitalize<name> = 'Kauã'
-
 // Uncapitalize
 const myName3: Uncapitalize<name> = 'kauã'
-
 // LowerCase
 const myName4: Lowercase<name> = 'kauã'
 
@@ -142,3 +139,7 @@ const params: UserManagerConstructorParams[0] = {
     name: 'kauã',
     surname: 'oliveira'
 }
+
+
+// InstanceType
+type UserManagerInstanceType = InstanceType<typeof UserManager>
